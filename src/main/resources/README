@@ -1,0 +1,2 @@
+1.配置mybatis_generator.properties 文件属性中对应的value
+2.运行MybatisGeneratorExecute中的Main方法

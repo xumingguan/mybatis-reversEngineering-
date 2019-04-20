@@ -1,0 +1,4 @@
+# mybatis-generator
+1.确保数据库中对应字段有对应注释说明，否则生成的model中没有对应注释
+2.配置mybatis_generator.properties 文件属性中对应的value
+3.运行MybatisGeneratorExecute中的Main方法
