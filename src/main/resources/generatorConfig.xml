@@ -49,7 +49,7 @@
             注意：如果在key class或者record class中有root class相同的属性，MBG就不会重新生成这些属性了，包括：
                 1，属性名相同，类型相同，有相同的getter/setter方法；-->
             <!--
-            <property name="rootClass" value="com.bestpay.wx.electronic.dao.model.base.BaseModel"/>
+            <property name="rootClass" value="com.xuxiaoguan.testl"/>
             -->
         </javaModelGenerator>
         <!--对应的xml mapper文件  -->

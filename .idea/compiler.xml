@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.bestpay.wx.electronic" />
+        <module name="com.xuxiaoguan.wx.electronic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="com.bestpay.wx.electronic" target="1.5" />
+      <module name="com.xuxiaoguan.wx.electronic" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

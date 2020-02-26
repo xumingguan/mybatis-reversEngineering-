@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea12b226-2e17-4665-becd-dae2a160c615" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_26.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ojdbc_ojdbc_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ojdbc_ojdbc_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.bestpay.wx.electronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.bestpay.wx.electronic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bestpay/wx/electronic/dao/MybatisGeneratorExecute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mybatis/generator/internal/MybatisGeneratorExecute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.bestpay.wx.electronic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/com.xuxiaoguan.wx.electronic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuxiaoguan/growth/electronic/dao/model/operation/PrizeRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuxiaoguan/growth/electronic/dao/mybatis/mapper/operation/PrizeRecordMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xuxiaoguan/growthelectronic/dao/mapper/operation/PrizeRecordMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +74,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
@@ -94,7 +87,7 @@
   <component name="RunManager" selected="Application.MybatisGeneratorExecute (1)">
     <configuration name="MybatisGeneratorExecute (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mybatis.generator.internal.MybatisGeneratorExecute" />
-      <module name="com.bestpay.wx.electronic" />
+      <module name="com.xuxiaoguan.wx.electronic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.mybatis.generator.internal.*" />
@@ -107,13 +100,60 @@
     </configuration>
     <configuration name="MybatisGeneratorExecute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MybatisGeneratorExecute" />
-      <module name="com.bestpay.wx.electronic" />
+      <module name="com.xuxiaoguan.wx.electronic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="com.xuxiaoguan.wx.electronic" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="com.xuxiaoguan.wx.electronic" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,7 +183,7 @@
       <workItem from="1582688223087" duration="599000" />
       <workItem from="1582704630541" duration="1148000" />
       <workItem from="1582705803477" duration="598000" />
-      <workItem from="1582728714276" duration="1209000" />
+      <workItem from="1582728714276" duration="1696000" />
     </task>
     <servers />
   </component>
@@ -166,30 +206,30 @@
       <screen x="0" y="0" width="1446" height="864" />
     </state>
     <state x="502" y="186" key="FileChooserDialogImpl/0.0.1446.864@0.0.1446.864" timestamp="1582731011843" />
-    <state width="1403" height="482" key="GridCell.Tab.0.bottom" timestamp="1582608469149">
+    <state width="1401" height="223" key="GridCell.Tab.0.bottom" timestamp="1582731792792">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
-    <state width="1403" height="482" key="GridCell.Tab.0.bottom/0.0.1446.864@0.0.1446.864" timestamp="1582608469149" />
-    <state width="1403" height="482" key="GridCell.Tab.0.center" timestamp="1582608469149">
+    <state width="1401" height="223" key="GridCell.Tab.0.bottom/0.0.1446.864@0.0.1446.864" timestamp="1582731792792" />
+    <state width="1401" height="223" key="GridCell.Tab.0.center" timestamp="1582731792792">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
-    <state width="1403" height="482" key="GridCell.Tab.0.center/0.0.1446.864@0.0.1446.864" timestamp="1582608469149" />
-    <state width="1403" height="482" key="GridCell.Tab.0.left" timestamp="1582608469149">
+    <state width="1401" height="223" key="GridCell.Tab.0.center/0.0.1446.864@0.0.1446.864" timestamp="1582731792792" />
+    <state width="1401" height="223" key="GridCell.Tab.0.left" timestamp="1582731792792">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
-    <state width="1403" height="482" key="GridCell.Tab.0.left/0.0.1446.864@0.0.1446.864" timestamp="1582608469149" />
-    <state width="1403" height="482" key="GridCell.Tab.0.right" timestamp="1582608469149">
+    <state width="1401" height="223" key="GridCell.Tab.0.left/0.0.1446.864@0.0.1446.864" timestamp="1582731792792" />
+    <state width="1401" height="223" key="GridCell.Tab.0.right" timestamp="1582731792792">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
-    <state width="1403" height="482" key="GridCell.Tab.0.right/0.0.1446.864@0.0.1446.864" timestamp="1582608469149" />
+    <state width="1401" height="223" key="GridCell.Tab.0.right/0.0.1446.864@0.0.1446.864" timestamp="1582731792792" />
     <state x="231" y="74" key="SettingsEditor" timestamp="1582731021299">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
     <state x="231" y="74" key="SettingsEditor/0.0.1446.864@0.0.1446.864" timestamp="1582731021299" />
-    <state x="398" y="174" width="661" height="516" key="find.popup" timestamp="1582731198052">
+    <state x="398" y="174" width="661" height="516" key="find.popup" timestamp="1582731879901">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
-    <state x="398" y="174" width="661" height="516" key="find.popup/0.0.1446.864@0.0.1446.864" timestamp="1582731198052" />
+    <state x="398" y="174" width="661" height="516" key="find.popup/0.0.1446.864@0.0.1446.864" timestamp="1582731879901" />
     <state x="380" y="197" width="672" height="677" key="run.anything.popup" timestamp="1582608441457">
       <screen x="0" y="0" width="1446" height="864" />
     </state>
