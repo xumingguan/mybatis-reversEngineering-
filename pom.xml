@@ -47,6 +47,15 @@
             <artifactId>mybatis</artifactId>
             <version>${mybatis.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>mybatis-generator</finalName>
@@ -56,14 +65,7 @@
                     <groupId>org.mybatis.generator</groupId>
                     <artifactId>mybatis-generator-maven-plugin</artifactId>
                     <version>${mybatis-generator.version}</version>
-                    <!-- 数据库驱动  -->
-                    <dependencies>
-                        <dependency>
-                            <groupId>ojdbc</groupId>
-                            <artifactId>ojdbc</artifactId>
-                            <version>14</version>
-                        </dependency>
-                    </dependencies>
+
                     <!-- 自动生成 -->
                     <executions>
                         <execution>

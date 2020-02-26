@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xuxiaoguan.growthelectronic.dao.mapper.operation.PrizeRecordMapper" >
+  <resultMap id="BaseResultMap" type="com.xuxiaoguan.growth.electronic.dao.model.operation.PrizeRecord" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="product_no" property="productNo" jdbcType="VARCHAR" />
+    <result column="operator_no" property="operatorNo" jdbcType="VARCHAR" />
+    <result column="customer_no" property="customerNo" jdbcType="VARCHAR" />
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="prize_no" property="prizeNo" jdbcType="VARCHAR" />
+    <result column="prize_amt" property="prizeAmt" jdbcType="VARCHAR" />
+    <result column="order_num" property="orderNum" jdbcType="VARCHAR" />
+    <result column="request_no" property="requestNo" jdbcType="VARCHAR" />
+    <result column="request_date" property="requestDate" jdbcType="TIMESTAMP" />
+    <result column="market_cfg_id" property="marketCfgId" jdbcType="VARCHAR" />
+    <result column="merchant_id" property="merchantId" jdbcType="VARCHAR" />
+    <result column="out_txn_type" property="outTxnType" jdbcType="VARCHAR" />
+    <result column="channel" property="channel" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="result_code" property="resultCode" jdbcType="VARCHAR" />
+    <result column="result_msg" property="resultMsg" jdbcType="VARCHAR" />
+    <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+    <result column="created_at" property="createdAt" jdbcType="TIMESTAMP" />
+    <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+    <result column="updated_at" property="updatedAt" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, product_no, operator_no, customer_no, uid, prize_no, prize_amt, order_num, request_no, 
+    request_date, market_cfg_id, merchant_id, out_txn_type, channel, status, result_code, 
+    result_msg, created_by, created_at, updated_by, updated_at
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_duiba_prize_record
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_duiba_prize_record
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xuxiaoguan.growth.electronic.dao.model.operation.PrizeRecord" >
+    insert into t_duiba_prize_record (id, product_no, operator_no, 
+      customer_no, uid, prize_no, 
+      prize_amt, order_num, request_no, 
+      request_date, market_cfg_id, merchant_id, 
+      out_txn_type, channel, status, 
+      result_code, result_msg, created_by, 
+      created_at, updated_by, updated_at
+      )
+    values (#{id,jdbcType=BIGINT}, #{productNo,jdbcType=VARCHAR}, #{operatorNo,jdbcType=VARCHAR}, 
+      #{customerNo,jdbcType=VARCHAR}, #{uid,jdbcType=VARCHAR}, #{prizeNo,jdbcType=VARCHAR}, 
+      #{prizeAmt,jdbcType=VARCHAR}, #{orderNum,jdbcType=VARCHAR}, #{requestNo,jdbcType=VARCHAR}, 
+      #{requestDate,jdbcType=TIMESTAMP}, #{marketCfgId,jdbcType=VARCHAR}, #{merchantId,jdbcType=VARCHAR}, 
+      #{outTxnType,jdbcType=VARCHAR}, #{channel,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, 
+      #{resultCode,jdbcType=VARCHAR}, #{resultMsg,jdbcType=VARCHAR}, #{createdBy,jdbcType=VARCHAR}, 
+      #{createdAt,jdbcType=TIMESTAMP}, #{updatedBy,jdbcType=VARCHAR}, #{updatedAt,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.xuxiaoguan.growth.electronic.dao.model.operation.PrizeRecord" >
+    insert into t_duiba_prize_record
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="productNo != null" >
+        product_no,
+      </if>
+      <if test="operatorNo != null" >
+        operator_no,
+      </if>
+      <if test="customerNo != null" >
+        customer_no,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="prizeNo != null" >
+        prize_no,
+      </if>
+      <if test="prizeAmt != null" >
+        prize_amt,
+      </if>
+      <if test="orderNum != null" >
+        order_num,
+      </if>
+      <if test="requestNo != null" >
+        request_no,
+      </if>
+      <if test="requestDate != null" >
+        request_date,
+      </if>
+      <if test="marketCfgId != null" >
+        market_cfg_id,
+      </if>
+      <if test="merchantId != null" >
+        merchant_id,
+      </if>
+      <if test="outTxnType != null" >
+        out_txn_type,
+      </if>
+      <if test="channel != null" >
+        channel,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="resultCode != null" >
+        result_code,
+      </if>
+      <if test="resultMsg != null" >
+        result_msg,
+      </if>
+      <if test="createdBy != null" >
+        created_by,
+      </if>
+      <if test="createdAt != null" >
+        created_at,
+      </if>
+      <if test="updatedBy != null" >
+        updated_by,
+      </if>
+      <if test="updatedAt != null" >
+        updated_at,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="productNo != null" >
+        #{productNo,jdbcType=VARCHAR},
+      </if>
+      <if test="operatorNo != null" >
+        #{operatorNo,jdbcType=VARCHAR},
+      </if>
+      <if test="customerNo != null" >
+        #{customerNo,jdbcType=VARCHAR},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="prizeNo != null" >
+        #{prizeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="prizeAmt != null" >
+        #{prizeAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNum != null" >
+        #{orderNum,jdbcType=VARCHAR},
+      </if>
+      <if test="requestNo != null" >
+        #{requestNo,jdbcType=VARCHAR},
+      </if>
+      <if test="requestDate != null" >
+        #{requestDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="marketCfgId != null" >
+        #{marketCfgId,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantId != null" >
+        #{merchantId,jdbcType=VARCHAR},
+      </if>
+      <if test="outTxnType != null" >
+        #{outTxnType,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null" >
+        #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="resultCode != null" >
+        #{resultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="resultMsg != null" >
+        #{resultMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="createdBy != null" >
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createdAt != null" >
+        #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedBy != null" >
+        #{updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedAt != null" >
+        #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xuxiaoguan.growth.electronic.dao.model.operation.PrizeRecord" >
+    update t_duiba_prize_record
+    <set >
+      <if test="productNo != null" >
+        product_no = #{productNo,jdbcType=VARCHAR},
+      </if>
+      <if test="operatorNo != null" >
+        operator_no = #{operatorNo,jdbcType=VARCHAR},
+      </if>
+      <if test="customerNo != null" >
+        customer_no = #{customerNo,jdbcType=VARCHAR},
+      </if>
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="prizeNo != null" >
+        prize_no = #{prizeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="prizeAmt != null" >
+        prize_amt = #{prizeAmt,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNum != null" >
+        order_num = #{orderNum,jdbcType=VARCHAR},
+      </if>
+      <if test="requestNo != null" >
+        request_no = #{requestNo,jdbcType=VARCHAR},
+      </if>
+      <if test="requestDate != null" >
+        request_date = #{requestDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="marketCfgId != null" >
+        market_cfg_id = #{marketCfgId,jdbcType=VARCHAR},
+      </if>
+      <if test="merchantId != null" >
+        merchant_id = #{merchantId,jdbcType=VARCHAR},
+      </if>
+      <if test="outTxnType != null" >
+        out_txn_type = #{outTxnType,jdbcType=VARCHAR},
+      </if>
+      <if test="channel != null" >
+        channel = #{channel,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="resultCode != null" >
+        result_code = #{resultCode,jdbcType=VARCHAR},
+      </if>
+      <if test="resultMsg != null" >
+        result_msg = #{resultMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="createdBy != null" >
+        created_by = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createdAt != null" >
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedBy != null" >
+        updated_by = #{updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedAt != null" >
+        updated_at = #{updatedAt,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xuxiaoguan.growth.electronic.dao.model.operation.PrizeRecord" >
+    update t_duiba_prize_record
+    set product_no = #{productNo,jdbcType=VARCHAR},
+      operator_no = #{operatorNo,jdbcType=VARCHAR},
+      customer_no = #{customerNo,jdbcType=VARCHAR},
+      uid = #{uid,jdbcType=VARCHAR},
+      prize_no = #{prizeNo,jdbcType=VARCHAR},
+      prize_amt = #{prizeAmt,jdbcType=VARCHAR},
+      order_num = #{orderNum,jdbcType=VARCHAR},
+      request_no = #{requestNo,jdbcType=VARCHAR},
+      request_date = #{requestDate,jdbcType=TIMESTAMP},
+      market_cfg_id = #{marketCfgId,jdbcType=VARCHAR},
+      merchant_id = #{merchantId,jdbcType=VARCHAR},
+      out_txn_type = #{outTxnType,jdbcType=VARCHAR},
+      channel = #{channel,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      result_code = #{resultCode,jdbcType=VARCHAR},
+      result_msg = #{resultMsg,jdbcType=VARCHAR},
+      created_by = #{createdBy,jdbcType=VARCHAR},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_by = #{updatedBy,jdbcType=VARCHAR},
+      updated_at = #{updatedAt,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

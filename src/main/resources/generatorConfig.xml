@@ -63,7 +63,7 @@
 
 
         <!-- 表名对应生成的实体  在这里进行更改表名  -->
-        <table tableName="t_app_new_extension_content" domainObjectName="NewExtensionContentMapperDO" enableCountByExample="false" enableSelectByExample="false"
+        <table tableName="t_duiba_prize_record" domainObjectName="PrizeRecord" enableCountByExample="false" enableSelectByExample="false"
         	enableDeleteByExample="false" enableUpdateByExample="false">
         </table>
         <!--
